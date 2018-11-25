@@ -1,16 +1,21 @@
 img{
     max-width: 100%;
-    max-height: 100px;
-    padding: 10px;
+    max-height: 100%;
 }
 
 .description{
     overflow: hidden;
     word-wrap: break-word;
-    padding: 10px;
 }
 
 .center{
-    padding-left: 10px;
-    padding-right: 10px;
+    overflow: hidden;
+}
+
+.eventItem{
+    border-top: 2px solid lightgrey;
+}
+
+.col{
+    padding-right: 0px;
 }

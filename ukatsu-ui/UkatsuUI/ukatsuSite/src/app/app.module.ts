@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { HomeModule } from './home/home.module';
+import { FooterRegionComponent } from './footer-region/footer-region.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { HomeModule } from './home/home.module';
     HomeComponent,
     AboutComponent,
     ScheduleComponent,
+    FooterRegionComponent,
   ],
   imports: [
     BrowserModule,

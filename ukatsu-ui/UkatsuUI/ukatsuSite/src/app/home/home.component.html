@@ -1,19 +1,25 @@
 <div>
-  <div class="highlightContent">
+  <div class="highlightContent shadow-lg">
     <app-slider></app-slider>
   </div>
-  <div class = "row">
-    <div class="col-8">
+  <div class="row">
+    <div class="col-8 ">
+        <app-content-list>Content list of all current items</app-content-list>
+        <app-content-list>Content list of all current items</app-content-list>
         <app-content-list>Content list of all current items</app-content-list>
     </div>
-    <div class="col card events">
-      <div class = "row">
-        <h3>Upcoming Events</h3>
+    <div class="col events">
+      <div class="row container card shadow-lg">
+        <div class="row container">
+          <div class="calendarIcon col-2 fa fa-calendar fa-lg"></div>
+          <h3 class="col contentInline">Upcoming Events</h3>
+        </div>
+        <div class="sidePanel row container">
+          <app-side-panel></app-side-panel>
+          <app-side-panel></app-side-panel>
+          <app-side-panel></app-side-panel>
+        </div>
       </div>
-      <div class = "row">
-        <app-side-panel></app-side-panel>
-      </div>
-      
     </div>
   </div>
 </div>
