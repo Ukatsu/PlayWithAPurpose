@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { HomeModule } from './home/home.module';
 import { FooterRegionComponent } from './footer-region/footer-region.component';
+import { AboutModule } from './about/about.module';
+import { ESportsComponent } from './e-sports/e-sports.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { FooterRegionComponent } from './footer-region/footer-region.component';
     AboutComponent,
     ScheduleComponent,
     FooterRegionComponent,
+    ESportsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
