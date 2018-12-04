@@ -1,6 +1,25 @@
-.WhoWeAre {
+.MaxSection {
+    height: 100%;
+}
+section {
+    height: 45em;
+}
+section :hover{
+    opacity: 1.0;
+}
+
+section.WhoWeAre {
     text-align: center;
-    background-color: red;
+    //background-image: url("../../assets/OurMisson.jpg");
+    background-size: 100%;
+    font-size: bold;
+    color: black;
+} 
+
+ul.WhoWeAre li{
+    list-style: none;
+    background-color: grey;
+    opacity: 1.0;
 }
 
 .WhatWeAccomplished {
@@ -16,4 +35,20 @@
 .ContactUs {
     text-align: center;
     background-color: orange
+}
+
+.colorWhite{
+    color:white;
+  }
+
+
+#divSpacing{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url(../../assets/logo.png);
+  }
+
+.navbar.transparent{
+    background: rgba(0,0,0,0.4);
 }

@@ -2,14 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './shared/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { HomeModule } from './home/home.module';
-import { FooterRegionComponent } from './footer-region/footer-region.component';
 import { AboutModule } from './about/about.module';
 import { ESportsComponent } from './e-sports/e-sports.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -17,14 +17,14 @@ import { ESportsComponent } from './e-sports/e-sports.component';
     HomeComponent,
     AboutComponent,
     ScheduleComponent,
-    FooterRegionComponent,
     ESportsComponent,
   ],
   imports: [
     BrowserModule,
+    SharedModule,
     AppRoutingModule,
     HomeModule,
-    AboutModule
+    AboutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
