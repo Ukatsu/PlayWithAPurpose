@@ -1,0 +1,28 @@
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                <div class="card-body">
+                    <div id="logoContainer">
+                        <img id="logo" src="../../../assets/logo.png">
+                    </div>
+                    <h5 class="card-title text-center">Log In</h5>
+                    <form class="form-signin" [formGroup]="signupForm">   
+                    <div class="form-label-group">
+                        <input type="email" id="inputEmail" class="form-control" formControlName="email" placeholder="Email address" required autofocus>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="password" id="inputPassword" class="form-control" formControlName="password" placeholder="Password" required>
+                    </div>
+                    <button class="btn btn-lg btn-dark btn-block text-uppercase" type="submit">Sign Up</button>
+                </form>
+                <div class="loginPath">
+                    <a routerLink="./signUp" href="membership/signUp">Not a Member? Sign Up here!</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+</body>

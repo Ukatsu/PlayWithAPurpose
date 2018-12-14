@@ -10,6 +10,13 @@ import { HomeModule } from './home/home.module';
 import { AboutModule } from './about/about.module';
 import { ESportsComponent } from './e-sports/e-sports.component';
 import { SharedModule } from './shared/shared.module';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from 'src/environments/environment';
+import { MembershipComponent } from './membership/membership.component';
+import { MembershipModule } from './membership/membership.module';
+
 
 @NgModule({
   declarations: [
@@ -18,13 +25,18 @@ import { SharedModule } from './shared/shared.module';
     AboutComponent,
     ScheduleComponent,
     ESportsComponent,
+    MembershipComponent,
   ],
   imports: [
     BrowserModule,
     SharedModule,
+    MembershipModule,
     AppRoutingModule,
     HomeModule,
     AboutModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

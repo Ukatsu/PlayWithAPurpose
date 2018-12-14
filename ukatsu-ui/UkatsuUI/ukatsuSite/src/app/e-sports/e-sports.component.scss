@@ -24,7 +24,11 @@ ul.WhoWeAre li{
 
 .WhatWeAccomplished {
     text-align: center;
-    background-color: blue;
+    background: url(../../assets/Hickman.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .Promo {
@@ -52,3 +56,44 @@ ul.WhoWeAre li{
 .navbar.transparent{
     background: rgba(0,0,0,0.4);
 }
+
+.imagebox {
+    background: black;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .imagebox img {
+    opacity: 1;
+    transition: 0.5s opacity;
+  }
+  
+  .imagebox .imagebox-desc {
+    background-color: rgba(0, 0, 0, 0);
+    bottom: 50%;
+    color: white;
+    font-size: 1.2em;
+    left: 0px;
+    padding: 10px 15px;
+    position: absolute;
+    transition: 0.5s padding;
+    text-align: center;
+    width: 100%;
+  }
+
+  .left{
+    width: 40%;
+    height: 100%;
+    background-color: rgba(255, 0, 191, 0.5);
+    vertical-align: middle;
+    color: white;
+    position: relative;
+  }
+
+  .content{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }

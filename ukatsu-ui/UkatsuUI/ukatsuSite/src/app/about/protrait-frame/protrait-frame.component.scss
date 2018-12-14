@@ -1,5 +1,51 @@
 img {
-    width: 100px;
-    height: 100px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: auto;  
+}
+
+.rounded-corners{
+    border-radius: 5px;
+}
+
+.portrait{
+    height: auto;
+    width: 100%;
     padding: 10px;
 }
+
+.imagebox {
+    background: black;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .imagebox img {
+    opacity: 1;
+    transition: 0.5s opacity;
+  }
+  
+  .imagebox .imagebox-desc {
+    background-color: rgba(255, 0, 0, 0.6);
+    bottom: 0px;
+    color: white;
+    font-size: 1.2em;
+    left: 0px;
+    padding: 10px 15px;
+    position: absolute;
+    transition: 0.5s padding;
+    text-align: center;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+  }
+  
+  .imagebox:hover img {
+    opacity: 0.7;
+  }
+  
+  .imagebox:hover .imagebox-desc {
+    padding-bottom: 10%;
+  }
