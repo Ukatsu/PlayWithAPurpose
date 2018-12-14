@@ -5,17 +5,21 @@ import { NavBarComponent } from '../shared/nav-bar/nav-bar.component';
 import { FooterRegionComponent } from '../shared/footer-region/footer-region.component';
 import { LoggingService } from './services/logging.service';
 import { UserService } from '../shared/services/user.service';
+import { MediaPanelComponent } from './media-panel/media-panel.component';
+import { Ng4TwitterTimelineModule } from 'ng4-twitter-timeline/lib/index';
 
 @NgModule({
   declarations: [
     ErrorComponent,
     NavBarComponent,
-    FooterRegionComponent
+    FooterRegionComponent,
+    MediaPanelComponent
   ],
   imports: [
     CommonModule,
+    Ng4TwitterTimelineModule
   ],
-  exports: [ErrorComponent, NavBarComponent , FooterRegionComponent],
+  exports: [ErrorComponent, NavBarComponent , FooterRegionComponent, MediaPanelComponent],
   providers: [UserService, LoggingService]
 })
 export class SharedModule { }
