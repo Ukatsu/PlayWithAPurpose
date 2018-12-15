@@ -6,7 +6,6 @@ import { FooterRegionComponent } from '../shared/footer-region/footer-region.com
 import { LoggingService } from './services/logging.service';
 import { UserService } from '../shared/services/user.service';
 import { MediaPanelComponent } from './media-panel/media-panel.component';
-import { Ng4TwitterTimelineModule } from 'ng4-twitter-timeline/lib/index';
 
 @NgModule({
   declarations: [
@@ -16,8 +15,7 @@ import { Ng4TwitterTimelineModule } from 'ng4-twitter-timeline/lib/index';
     MediaPanelComponent
   ],
   imports: [
-    CommonModule,
-    Ng4TwitterTimelineModule
+    CommonModule
   ],
   exports: [ErrorComponent, NavBarComponent , FooterRegionComponent, MediaPanelComponent],
   providers: [UserService, LoggingService]
